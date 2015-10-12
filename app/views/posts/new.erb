@@ -1,1 +1,19 @@
 <p>This is new</p>
+<section>
+  <form action="/posts" method="post">
+  <div>
+    <label>Body:</label>
+    <textarea name="post[body]" placeholder="Type your post"></textarea>
+    <div>
+      <label>Secret token:</label>
+        <span>testing</span>
+        <input type="hidden" name="post[token]" value="testing"/>
+    </div>
+  </form>
+  </div>
+  <div>
+    <label>Category:</label>
+    <input type="text" name="post[categories]" placeholder="Type your category">
+  </div>
+  <input type="submit" name="decision" value="Create!">
+</section>

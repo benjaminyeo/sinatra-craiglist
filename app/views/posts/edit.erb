@@ -1,1 +1,23 @@
 <p>This is edit</p>
+
+<section>
+  <form action="/posts/:id" method="post">
+    <div>
+      <label>Body:</label>
+      <textarea name="post[body]" placeholder="Type your post" >previous body value</textarea>
+      <div>
+        <label>Secret token:</label>
+        <span>testing</span>
+        <input type="hidden" name="post[token]" value="testing"/>
+      </div>
+
+    </div>
+    <div>
+        <label>Category:</label>
+        <input type="text" name="post[categories]" placeholder="Type your category" value="previous">
+    </div>
+        <input type="submit" name="decision" value="edit">
+        <input type="submit" name="decision" value="delete">
+  </form>
+</section>
+    
